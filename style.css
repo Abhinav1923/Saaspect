@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-weight: 700;
+}
+
+.container-fluid{
+    /* border: 1px dashed; */
+    display: flex;
+    max-height: 100vh;
+    padding: 30px 0px;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img{
+    height: 100%;
+}
+
+.cover-form{
+    padding: 0px 70px;
+}
+
+.cover-form h2{
+    text-align: center;
+}
+
+ .seperation::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background-color: rgb(179, 171, 171);
+    top: 50%;
+    left: 13%;
+ } 
+ 
+ .seperation::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background-color: rgb(179, 171, 171);
+    top: 50%;
+    right: 13%;
+ }
+
+ .social-icon ul li{
+     margin: 0px 10px 0px 10px;
+ }
+
+ .form-control {
+    line-height: 2;
+    background-color: #E4F1FFC7;
+    outline: none;
+    border: none;
+}
+
+.btn{
+    padding: 7px 25px;
+}
+#password button, #confirm-password button{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 20px;
+}
+
+.pswrd-icon-btn, .pswrd-icon-btn:active, .pswrd-icon-btn:focus{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .cover-img {
+    display: none;
+  }
+
+  .cover-form{
+    padding: 0px 10px;
+}
+
+ .seperation::before{
+    left: 10%;
+ } 
+ 
+ .seperation::after{
+    right: 10%;
+ }
+}
